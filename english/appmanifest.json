@@ -1,6 +1,6 @@
 {
-	"name": "vocabulary",
-	"short_name": "vocabulary",
+	"name": "English Vocabulary Game",
+	"short_name": "English Vocabulary Game",
 	"description": "Vocabulary Game for Ramón y Cajal",
 	"start_url": "index.html",
 	"display": "fullscreen",

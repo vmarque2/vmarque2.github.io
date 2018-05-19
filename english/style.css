@@ -13,22 +13,17 @@ html, body, canvas {
 }
 
 @font-face {
-	font-family: 'SF-Pro-Display-Regular';
-	src: url('fonts/sf-pro-display-regular.otf') format('opentype');
+	font-family: 'DejaVuSans-InfantUK';
+	src: url('fonts/dejavusans-infantuk.otf') format('opentype');
 }
 
 @font-face {
-	font-family: 'SF-Pro-Display-Heavy';
-	src: url('fonts/sf-pro-display-heavy.otf') format('opentype');
+	font-family: 'DejaVuSans-InfantUKBold';
+	src: url('fonts/dejavusans-infantukbold.woff') format('woff');
 }
 
 @font-face {
-	font-family: 'SF-Pro-Display-Thin';
-	src: url('fonts/sf-pro-display-thin.otf') format('opentype');
-}
-
-@font-face {
-	font-family: 'SF-Pro-Display-Light';
-	src: url('fonts/sf-pro-display-light.otf') format('opentype');
+	font-family: 'RifficFree-Bold';
+	src: url('fonts/rifficfree-bold.ttf') format('truetype');
 }
 
