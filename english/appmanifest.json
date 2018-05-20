@@ -1,6 +1,6 @@
 {
-	"name": "English Vocabulary Game",
-	"short_name": "English Vocabulary Game",
+	"name": "JungleEnglish",
+	"short_name": "JungleEnglish",
 	"description": "Vocabulary Game for Ramón y Cajal",
 	"start_url": "index.html",
 	"display": "fullscreen",
