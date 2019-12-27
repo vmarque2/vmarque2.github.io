@@ -201,9 +201,9 @@
                 }
                 if (a.join(' ') == '0x01' || a.join(' ') == '0x02') 
                     console.log('A');
-                    var curr_val = A.text();
+                    var curr_val = document.querySelector('#A').text();
                     var new_val = parseInt(curr_val)+1;
-                    A.text(new_val); 
+                    document.querySelector('#A').text(new_val); 
                     //updateGoogleSheets();
                 
             }
