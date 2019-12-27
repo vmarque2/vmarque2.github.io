@@ -142,7 +142,7 @@
             let dialog = document.querySelector('#errorDialog');
             let A = document.querySelector('#A');
             let B = document.querySelector('#B');
-            console.log("Started!");
+            console.log("Starting....");
 
             let gattServer;
             
@@ -202,7 +202,7 @@
                 if (a.join(' ') == '0x01' || a.join(' ') == '0x02') 
                     console.log('A');
                     var curr_val = document.getElementById("A").innerHTML;
-                    document.getElementById("A").innerHTML = parseInt(curr_val)+1;
+                    document.getElementById("A").innerHTML = parseInt(curr_val);
                     //updateGoogleSheets();
                 
             }
@@ -220,7 +220,7 @@
                 if (a.join(' ') == '0x01' || a.join(' ') == '0x02') 
                     console.log('B');
                      var curr_val = document.getElementById("B").innerHTML;
-                    document.getElementById("B").innerHTML = parseInt(curr_val)+1;
+                    document.getElementById("B").innerHTML = parseInt(curr_val);
                     
             }
 
