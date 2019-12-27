@@ -201,7 +201,9 @@
                 }
                 if (a.join(' ') == '0x01' || a.join(' ') == '0x02') 
                     console.log('A');
-                    document.getElementById("A").innerHTML = "hola";
+                    var curr_val = document.getElementById("A").innerHTML;
+                    var new_val = parseInt(curr_val)+1;
+                    document.getElementById("A").innerHTML = new_val;
                     //updateGoogleSheets();
                 
             }
