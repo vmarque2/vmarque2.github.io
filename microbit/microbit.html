@@ -142,7 +142,7 @@
             let dialog = document.querySelector('#errorDialog');
             let A = document.querySelector('#A');
             let B = document.querySelector('#B');
-            console.log(A);
+            console.log(B);
 
             let gattServer;
             
@@ -201,10 +201,7 @@
                 }
                 if (a.join(' ') == '0x01' || a.join(' ') == '0x02') 
                     console.log('A');
-                    var curr_val = document.querySelector('#A').text();
-                    var new_val = parseInt(curr_val)+1;
-                    document.querySelector('#A').text(new_val); 
-                    //updateGoogleSheets();
+                    updateGoogleSheets();
                 
             }
 
@@ -225,6 +222,9 @@
 
 
             function updateGoogleSheets() {
+                    var curr_val = document.querySelector('#A').text();
+                    var new_val = parseInt(curr_val)+1;
+                    document.querySelector('#A').text(new_val); 
                 let serializedData = 'id=' + gattServer.device.id + '&name=' + gattServer.device.name;
 
                 let request = $.ajax({
