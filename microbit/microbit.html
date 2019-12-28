@@ -142,7 +142,7 @@
             let dialog = document.querySelector('#errorDialog');
             let A = document.querySelector('#A');
             let B = document.querySelector('#B');
-            console.log("Started....");
+            console.log("Starting....");
 
             let gattServer;
             
@@ -192,7 +192,7 @@
             function handleCharacteristicValueChanged1(event) {
                 //Button A
                 let value = event.target.value;
-                                    let curr_val = document.getElementById("A").innerHTML;
+                var curr_val = document.getElementById("A").innerHTML;
                 let a = [];
                 // Convert raw data bytes to hex values just for the sake of showing something.
                 // In the "real" world, you'd use data.getUint8, data.getUint16 or even
@@ -200,20 +200,27 @@
                 for (let i = 0; i < value.byteLength; i++) {
                   a.push('0x' + ('00' + value.getUint8(i).toString(16)).slice(-2));
                 }
-                if (a.join(' ') == '0x02') 
+                if (a.join(' ') == '0x01' || a.join(' ') == '0x02'){
                     console.log('A');
-                    document.getElementById("A").innerHTML = parseInt(curr_val)+1;
                     //updateGoogleSheets();
+                 }
                 
             }
 
             function handleCharacteristicValueChanged2(event) {
                 //Button B
                 let value = event.target.value;
-                let curr_val = document.getElementById("B").innerHTML;
-                document.getElementById("B").innerHTML = parseInt(curr_val)+1;
-              
-                    
+                var curr_val = document.getElementById("B").innerHTML;
+                document.getElementById("B").innerHTML = parseInt(curr_val);
+                let a = [];
+                // Convert raw data bytes to hex values just for the sake of showing something.
+                // In the "real" world, you'd use data.getUint8, data.getUint16 or even
+                // TextDecoder to process raw data bytes.
+                for (let i = 0; i < value.byteLength; i++) {
+                  a.push('0x' + ('00' + value.getUint8(i).toString(16)).slice(-2));
+                }
+                if (a.join(' ') == '0x01' || a.join(' ') == '0x02') 
+                    document.getElementById("B").innerHTML = parseInt(curr_val)+1;
             }
 
 
