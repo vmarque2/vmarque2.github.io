@@ -200,7 +200,7 @@
                 for (let i = 0; i < value.byteLength; i++) {
                   a.push('0x' + ('00' + value.getUint8(i).toString(16)).slice(-2));
                 }
-                if (a.join(' ') == '0x01' || a.join(' ') == '0x02') 
+                if (a.join(' ') == '0x02') 
                     console.log('A');
                     document.getElementById("A").innerHTML = parseInt(curr_val)+1;
                     //updateGoogleSheets();
@@ -219,7 +219,7 @@
                 for (let i = 0; i < value.byteLength; i++) {
                   a.push('0x' + ('00' + value.getUint8(i).toString(16)).slice(-2));
                 }
-                if (a.join(' ') == '0x01' || a.join(' ') == '0x02') 
+                if ( a.join(' ') == '0x02') 
                     console.log('B');
                     document.getElementById("B").innerHTML = parseInt(curr_val)+1;
                     
